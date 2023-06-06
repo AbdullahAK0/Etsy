@@ -15,16 +15,10 @@ public class StepDefinitions {
         Driver.getDriver().get(ConfigReader.getProperty("Url"));
     }
 
-    @Given("Click on the Sign in button")
+    @Given("User click on the Sign in button enter the valid datas and login")
     public void click_on_the_sign_in_button() {
-        page.signInMethod();
-
-    }
-
-    @Given("User enter the valid datas and login")
-    public void user_enter_the_valid_datas_and_login() {
         page.login();
-        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(3);
 
     }
 
@@ -35,7 +29,9 @@ public class StepDefinitions {
 
     @Given("User choose the options")
     public void user_choose_the_options() {
-       page.options();
+       page.options1();
+
+       page.options2();
     }
 
     @Given("User completes the purchase")

@@ -18,8 +18,6 @@ import java.util.Set;
 
 public class Page extends Base {
     Actions actions = new Actions(Driver.getDriver());
-    JavascriptExecutor js;
-
 
     @FindBy(xpath = "//*[@class='wt-btn wt-btn--small wt-btn--transparent wt-mr-xs-1 inline-overlay-trigger signin-header-action select-signin']")
     private WebElement signInButton;
@@ -32,9 +30,6 @@ public class Page extends Base {
 
     @FindBy (xpath = "//button[@class='wt-btn wt-btn--primary wt-width-full']")
     private WebElement signInLink;
-
-    @FindBy (xpath = "//span[@id='catnav-primary-link-10983']")
-    private WebElement weddingSection;
 
     @FindBy (xpath = "//*[@target='etsy.851979574']")
     private WebElement choosing;
@@ -69,12 +64,12 @@ public class Page extends Base {
     @FindBy (xpath = "(//div[@class='wt-grid__item-xs-12 wt-p-xs-0 wt-mb-xs-2'])[1]")
     private WebElement shipHere;
 
-    public void signInMethod (){
+    @FindBy (xpath = "//*[@name='payment_submit']")
+    private WebElement review;
 
-        signInButton.click();
-    }
 
     public void login(){
+        signInButton.click();
         emailTextbox.sendKeys(ConfigReader.getProperty("username"));
         passwordTextbox.sendKeys(ConfigReader.getProperty("password"));
         signInLink.click();
@@ -88,18 +83,29 @@ public class Page extends Base {
 
     }
 
-    public void options(){
+    public void options1(){
         Select select = new Select(options);
         select.selectByIndex(3);
-        select = new Select(option2);
-        select.selectByIndex(4);
+        ReusableMethods.bekle(3);
+    }
+    public void options2(){
+        Select select = new Select(option2);
+        select.selectByIndex(2);
+        ReusableMethods.bekle(3);
         buyButton.click();
     }
 
     public void buy(){
+
         shipHere.click();
+        ReusableMethods.bekle(3);
         cardRadioButton.click();
-        actions.sendKeys(Keys.TAB);
+        actions.sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty("name")).
+        sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty("cardNumber")).
+        sendKeys(Keys.TAB).sendKeys("9").sendKeys(Keys.TAB).sendKeys(Keys.TAB)
+                .sendKeys(ConfigReader.getProperty("securityCode")).perform();
+
+        review.click();
 
     }
 
