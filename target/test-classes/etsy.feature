@@ -5,4 +5,6 @@ Feature: Shopping on Etsy
     * User goes to "Url"
     * Click on the Sign in button
     * User enter the valid datas and login
-    * Click on the Wedding & Party link
+    * User choose the product
+    * User choose the options
+    * User completes the purchase

@@ -1,11 +1,14 @@
 package pages;
 
 import com.fasterxml.jackson.databind.JsonSerializable;
+import io.cucumber.java.eo.Se;
+import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.JSUtilities;
@@ -16,6 +19,7 @@ import java.util.Set;
 public class Page extends Base {
     Actions actions = new Actions(Driver.getDriver());
     JavascriptExecutor js;
+
 
     @FindBy(xpath = "//*[@class='wt-btn wt-btn--small wt-btn--transparent wt-mr-xs-1 inline-overlay-trigger signin-header-action select-signin']")
     private WebElement signInButton;
@@ -32,7 +36,7 @@ public class Page extends Base {
     @FindBy (xpath = "//span[@id='catnav-primary-link-10983']")
     private WebElement weddingSection;
 
-    @FindBy (xpath = "//div[@class='wt-height-full']")
+    @FindBy (xpath = "//*[@target='etsy.851979574']")
     private WebElement choosing;
 
     @FindBy (id = "variation-selector-0")
@@ -50,6 +54,21 @@ public class Page extends Base {
     @FindBy (id = "cc-name--paymentstep")
     private WebElement makeSure;
 
+    @FindBy (xpath = "//*[@id='global-enhancements-search-query']")
+    private WebElement searchbox;
+
+    @FindBy (xpath = "//*[@class='wt-icon wt-nudge-b-2 wt-nudge-r-1']")
+    private WebElement searchboxButton;
+
+    @FindBy (xpath = "//*[@id='variation-selector-1']")
+    private WebElement option2;
+
+    @FindBy (xpath = "//*[@class='wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs']")
+    private WebElement favorite;
+
+    @FindBy (xpath = "(//div[@class='wt-grid__item-xs-12 wt-p-xs-0 wt-mb-xs-2'])[1]")
+    private WebElement shipHere;
+
     public void signInMethod (){
 
         signInButton.click();
@@ -62,14 +81,25 @@ public class Page extends Base {
     }
 
     public void chooseTheProduct(){
-        /*js.executeScript("arguments[0].scrollIntoView(true)", weddingSection);
-        ReusableMethods.bekle(1);
 
-         */
-        weddingSection.click();
+        favorite.click();
+        choosing.click();
+        ReusableMethods.switchtoWindows();
 
+    }
 
+    public void options(){
+        Select select = new Select(options);
+        select.selectByIndex(3);
+        select = new Select(option2);
+        select.selectByIndex(4);
+        buyButton.click();
+    }
 
+    public void buy(){
+        shipHere.click();
+        cardRadioButton.click();
+        actions.sendKeys(Keys.TAB);
 
     }
 

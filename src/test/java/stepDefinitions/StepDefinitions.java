@@ -18,20 +18,32 @@ public class StepDefinitions {
     @Given("Click on the Sign in button")
     public void click_on_the_sign_in_button() {
         page.signInMethod();
-        ReusableMethods.switchtoWindows();
 
     }
 
     @Given("User enter the valid datas and login")
     public void user_enter_the_valid_datas_and_login() {
         page.login();
-        ReusableMethods.switchtoWindows();
+        ReusableMethods.bekle(5);
+
     }
 
-    @Given("Click on the Wedding & Party link")
+    @Given("User choose the product")
     public void click_on_the_wedding_party_link() {
         page.chooseTheProduct();
     }
+
+    @Given("User choose the options")
+    public void user_choose_the_options() {
+       page.options();
+    }
+
+    @Given("User completes the purchase")
+    public void user_completes_the_purchase() {
+        page.buy();
+    }
+
+
 
 
 
