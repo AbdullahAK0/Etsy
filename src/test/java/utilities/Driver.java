@@ -6,21 +6,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
+
 public class Driver {
     static WebDriver driver;
-    private  Driver(){
+
+    private Driver() {
 
 
         // Singleton Pattern : to prevent creating new object from this class, we can use singleton patter.
         // creating a private constructer is more than enough
         // it is for security
     }
+
     public static WebDriver getDriver() {
 
         ChromeOptions ops = new ChromeOptions();
+        EdgeOptions opsn = new EdgeOptions();
 
         String browser = ConfigReader.getProperty("browser");
         if (driver == null) {
@@ -31,12 +36,13 @@ public class Driver {
                     driver = new ChromeDriver(ops);
                     break;
                 case "edge":
+                    opsn.addArguments("--remote-allow-origins=*");
                     WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
+                    driver = new EdgeDriver(opsn);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
-                    driver= new FirefoxDriver();
+                    driver = new FirefoxDriver();
                     break;
                 default:
                     ops.addArguments("--remote-allow-origins=*");
@@ -48,15 +54,17 @@ public class Driver {
         }
         return driver;
     }
+
     public static void closeDriver() {
         if (driver != null) {
-        //    driver.close();
+            //    driver.close();
             driver = null;
         }
     }
+
     public static void quitDriver() {
         if (driver != null) {
-          //  driver.quit();
+            //  driver.quit();
             driver = null;
         }
     }

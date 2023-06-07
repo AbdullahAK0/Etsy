@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="23.389" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Shopping on Etsy" name="User should be able to shop on etsy site" time="23.245">
-<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;a href=&quot;https://www.etsy.com/guest/favorites?ref=hdr-fav&quot; class=&quot;wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs&quot; data-favorites-nav-link=&quot;&quot; aria-labelledby=&quot;ge-tooltip-label-favorites&quot;&gt;...&lt;/a&gt; is not clickable at point (1351, 36). Other element would receive the click: &lt;div class=&quot;wt-overlay wt-overlay--has-close-icon wt-overlay--will-animate&quot; id=&quot;join-neu-overlay&quot; aria-hidden=&quot;false&quot; data-wt-overlay=&quot;&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-label=&quot;Sign In or Register Overlay&quot; aria-labelledby=&quot;join-neu-overlay-title&quot; style=&quot;overscroll-behavior: contain;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=114.0.5735.110)
+<testsuite name="Cucumber" time="36.765" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Shopping on Etsy" name="User should be able to shop on etsy site" time="35.745">
+<failure type="org.openqa.selenium.StaleElementReferenceException" message="stale element reference: stale element not found
+  (Session info: MicrosoftEdge=114.0.1823.37)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e281704c50775f8ed7c2694f253f4762, clickElement {id=8EAB2D5D1F3DE7D9E46F7B4405A00397_element_84}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53278/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e281704c50775f8ed7c2694f253f4762)] -&gt; xpath: //*[@class='wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs']]
-Session ID: e281704c50775f8ed7c2694f253f4762">
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://www.etsy.com/guest/favorites?ref=hdr-fav" class="wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs" data-favorites-nav-link="" aria-labelledby="ge-tooltip-label-favorites">...</a> is not clickable at point (1351, 36). Other element would receive the click: <div class="wt-overlay wt-overlay--has-close-icon wt-overlay--will-animate" id="join-neu-overlay" aria-hidden="false" data-wt-overlay="" role="dialog" aria-modal="true" aria-label="Sign In or Register Overlay" aria-labelledby="join-neu-overlay-title" style="overscroll-behavior: contain;">...</div>
-  (Session info: chrome=114.0.5735.110)
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [29f192a2d874fab14cd64fd310a0b40d, clickElement {id=C2A73D8D6E5085DBE9D5896E21AE3C33_element_14}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.37, ms:edgeOptions: {debuggerAddress: localhost:51862}, msedge: {msedgedriverVersion: 114.0.1823.41 (71c8dc3865e8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51862/devtoo..., se:cdpVersion: 114.0.1823.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (29f192a2d874fab14cd64fd310a0b40d)] -&gt; xpath: //*[@class='wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs']]
+Session ID: 29f192a2d874fab14cd64fd310a0b40d">
+<![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=114.0.1823.37)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e281704c50775f8ed7c2694f253f4762, clickElement {id=8EAB2D5D1F3DE7D9E46F7B4405A00397_element_84}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53278/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e281704c50775f8ed7c2694f253f4762)] -> xpath: //*[@class='wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs']]
-Session ID: e281704c50775f8ed7c2694f253f4762
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [29f192a2d874fab14cd64fd310a0b40d, clickElement {id=C2A73D8D6E5085DBE9D5896E21AE3C33_element_14}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.37, ms:edgeOptions: {debuggerAddress: localhost:51862}, msedge: {msedgedriverVersion: 114.0.1823.41 (71c8dc3865e8..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51862/devtoo..., se:cdpVersion: 114.0.1823.37, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (29f192a2d874fab14cd64fd310a0b40d)] -> xpath: //*[@class='wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs']]
+Session ID: 29f192a2d874fab14cd64fd310a0b40d
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -40,7 +42,7 @@ Session ID: e281704c50775f8ed7c2694f253f4762
 	at com.sun.proxy.$Proxy19.click(Unknown Source)
 	at pages.Page.chooseTheProduct(Page.java:80)
 	at stepDefinitions.StepDefinitions.click_on_the_wedding_party_link(StepDefinitions.java:27)
-	at ✽.User choose the product(file:///C:/Users/Lenovo/Desktop/Proje%20Team%205/Etsy/src/test/resources/etsy.feature:7)
+	at ✽.User choose the product(file:///C:/Users/Lenovo/IdeaProjects/Etsy/src/test/resources/etsy.feature:7)
 ]]>
 </failure>
 <system-out><![CDATA[

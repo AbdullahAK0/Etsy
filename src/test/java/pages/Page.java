@@ -43,10 +43,10 @@ public class Page extends Base {
     @FindBy (xpath = "(//button[@class='select_btn wt-btn wt-btn--filled wt-width-full'])[1]")
     private WebElement chooseAddress;
 
-    @FindBy (id = "cc-radio--paymentstep")
+    @FindBy (xpath = "//input[@id='cc-radio--paymentstep']")
     private WebElement cardRadioButton;
 
-    @FindBy (id = "cc-name--paymentstep")
+    @FindBy (xpath = "//input[@id='cc-name--paymentstep']")
     private WebElement makeSure;
 
     @FindBy (xpath = "//*[@id='global-enhancements-search-query']")
