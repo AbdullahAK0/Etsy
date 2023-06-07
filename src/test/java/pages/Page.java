@@ -100,6 +100,7 @@ public class Page extends Base {
         shipHere.click();
         ReusableMethods.bekle(3);
         cardRadioButton.click();
+        ReusableMethods.bekle(3);
         actions.sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty("name")).
         sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty("cardNumber")).
         sendKeys(Keys.TAB).sendKeys("9").sendKeys(Keys.TAB).sendKeys(Keys.TAB)

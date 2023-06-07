@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="38.002" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Shopping on Etsy" name="User should be able to shop on etsy site" time="37.811">
-<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;input id=&quot;cc-radio--paymentstep&quot; type=&quot;radio&quot; name=&quot;payment_method&quot; class=&quot;radio&quot; data-payment-method=&quot;cc&quot; autocomplete=&quot;off&quot;&gt; is not clickable at point (454, 235). Other element would receive the click: &lt;label class=&quot;wt-width-full&quot; for=&quot;cc-radio--paymentstep&quot;&gt;...&lt;/label&gt;
+<testsuite name="Cucumber" time="23.389" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Shopping on Etsy" name="User should be able to shop on etsy site" time="23.245">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;a href=&quot;https://www.etsy.com/guest/favorites?ref=hdr-fav&quot; class=&quot;wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs&quot; data-favorites-nav-link=&quot;&quot; aria-labelledby=&quot;ge-tooltip-label-favorites&quot;&gt;...&lt;/a&gt; is not clickable at point (1351, 36). Other element would receive the click: &lt;div class=&quot;wt-overlay wt-overlay--has-close-icon wt-overlay--will-animate&quot; id=&quot;join-neu-overlay&quot; aria-hidden=&quot;false&quot; data-wt-overlay=&quot;&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-label=&quot;Sign In or Register Overlay&quot; aria-labelledby=&quot;join-neu-overlay-title&quot; style=&quot;overscroll-behavior: contain;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=114.0.5735.110)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [05a18bfd2557547e512dc8e513fcd348, clickElement {id=5E27B379A90AE3DB0F36925BD735E3AB_element_317}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51048/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (05a18bfd2557547e512dc8e513fcd348)] -&gt; id: cc-radio--paymentstep]
-Session ID: 05a18bfd2557547e512dc8e513fcd348">
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id="cc-radio--paymentstep" type="radio" name="payment_method" class="radio" data-payment-method="cc" autocomplete="off"> is not clickable at point (454, 235). Other element would receive the click: <label class="wt-width-full" for="cc-radio--paymentstep">...</label>
+Command: [e281704c50775f8ed7c2694f253f4762, clickElement {id=8EAB2D5D1F3DE7D9E46F7B4405A00397_element_84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53278/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e281704c50775f8ed7c2694f253f4762)] -&gt; xpath: //*[@class='wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs']]
+Session ID: e281704c50775f8ed7c2694f253f4762">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://www.etsy.com/guest/favorites?ref=hdr-fav" class="wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs" data-favorites-nav-link="" aria-labelledby="ge-tooltip-label-favorites">...</a> is not clickable at point (1351, 36). Other element would receive the click: <div class="wt-overlay wt-overlay--has-close-icon wt-overlay--will-animate" id="join-neu-overlay" aria-hidden="false" data-wt-overlay="" role="dialog" aria-modal="true" aria-label="Sign In or Register Overlay" aria-labelledby="join-neu-overlay-title" style="overscroll-behavior: contain;">...</div>
   (Session info: chrome=114.0.5735.110)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [05a18bfd2557547e512dc8e513fcd348, clickElement {id=5E27B379A90AE3DB0F36925BD735E3AB_element_317}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51048/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (05a18bfd2557547e512dc8e513fcd348)] -> id: cc-radio--paymentstep]
-Session ID: 05a18bfd2557547e512dc8e513fcd348
+Command: [e281704c50775f8ed7c2694f253f4762, clickElement {id=8EAB2D5D1F3DE7D9E46F7B4405A00397_element_84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53278/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e281704c50775f8ed7c2694f253f4762)] -> xpath: //*[@class='wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs']]
+Session ID: e281704c50775f8ed7c2694f253f4762
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -38,18 +38,17 @@ Session ID: 05a18bfd2557547e512dc8e513fcd348
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at pages.Page.buy(Page.java:110)
-	at stepDefinitions.StepDefinitions.user_completes_the_purchase(StepDefinitions.java:45)
-	at ✽.User completes the purchase(file:///C:/Users/Lenovo/Desktop/Proje%20Team%205/Etsy/src/test/resources/etsy.feature:10)
+	at pages.Page.chooseTheProduct(Page.java:80)
+	at stepDefinitions.StepDefinitions.click_on_the_wedding_party_link(StepDefinitions.java:27)
+	at ✽.User choose the product(file:///C:/Users/Lenovo/Desktop/Proje%20Team%205/Etsy/src/test/resources/etsy.feature:7)
 ]]>
 </failure>
 <system-out><![CDATA[
 * User goes to "Url"........................................................passed
-* Click on the Sign in button...............................................passed
-* User enter the valid datas and login......................................passed
-* User choose the product...................................................passed
-* User choose the options...................................................passed
-* User completes the purchase...............................................failed
+* User click on the Sign in button enter the valid datas and login..........passed
+* User choose the product...................................................failed
+* User choose the options...................................................skipped
+* User completes the purchase...............................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

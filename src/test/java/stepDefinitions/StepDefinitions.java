@@ -38,9 +38,4 @@ public class StepDefinitions {
     public void user_completes_the_purchase() {
         page.buy();
     }
-
-
-
-
-
 }
